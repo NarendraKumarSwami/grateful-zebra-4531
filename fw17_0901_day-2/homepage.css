@@ -4,15 +4,21 @@
 #hp2{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(40% 70%);
+    /* grid-template-rows: repeat(40% 70%); */
     /* border: 1px solid grey; */
-
+    height: 550px;
+    margin-bottom: -40px;
 }
 h1{
-    font-size: 34px;
+  font-size: 34px;
+  /* border: 1px solid; */
 }
+/* #midh1t{
+  text-align: center;
+} */
 #img1{
-    width: 200%;
+    width: 220%;
+    /* border: 1px solid grey; */
 }
 #sec1{
     /* border: 1px solid; */
@@ -26,6 +32,7 @@ h1{
 } */
 #sec1 h2{
     color: rgb(6, 191, 191);
+    /* border: 1px solid grey; */
 }
 #sec1 h3{
     color: grey;
@@ -48,4 +55,218 @@ h1{
 }
 .sec2 ~ h3{
     color: rgb(16, 194, 194);
+
 }
+
+
+
+
+
+
+
+/* product slide-I start */
+    /* HEADER */
+
+    * {
+        /* background-color: white; */
+        /* margin: auto; */
+        /* margin-bottom: 0px; */
+        padding: 1px;
+        /* font-family: "Mulish", sans-serif; */
+        
+      }
+      .product {
+        position: relative;
+        overflow: hidden;
+        /* padding: 20px; */
+        margin-top: 40px;
+      }
+      .h4h{
+        text-align: center;
+        padding: 1%;
+        font-size: 34px;
+        color: rgb(57, 55, 55);
+        margin-top: 0px;
+        margin-bottom: -30px;
+        /* background-color: rgb(89, 84, 84); */
+    }
+      
+    .h4h + p{
+        text-align: center;
+        color: grey;
+    }
+      /* PRODUCTS */
+      
+      
+      .product-category {
+        /* border: 1px solid red; */
+        text-align: center;
+        /* padding: 0 10vw; */
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-transform: capitalize;
+      }
+      .product-card {
+        flex: 0 0 auto;
+        /* border: 1px solid blue; */
+        width: 33%;
+        height: 480px;
+        margin-right: 10px;
+        margin-left: 10px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 5%;
+        
+       
+      }
+
+      .img1{
+        height: 70%;
+        width: 100%;
+      }
+      #p1212{
+        margin-top: -80px;
+        color: rgb(65, 64, 64);
+        font-size: 15.5px;
+      }
+      
+      #but123{
+        height: 30px;
+        width: 30px;
+        color: rgb(6, 191, 191);
+        border-radius: 50%;
+        background-color: rgb(224, 223, 223);
+        border: transparent;
+   
+ 
+      }
+      #but1234{
+        background-color: transparent;
+        border: none;
+        margin-top: 0px;
+        margin-bottom: 10px;
+
+      }
+      .product-image {
+        position: relative;
+        width: 100%;
+        height: 280px;
+        overflow: hidden;
+        border-radius: 5%;
+        
+      }
+      /* #slideb{
+        display: block;
+        margin: auto;
+    
+      } */
+      #text1212{
+        width: 90%;
+        margin: auto;
+      }
+    
+      #ptag12{
+        font-size: 16px;
+        color: grey;
+      }
+      #line1212{
+        height: 3px;
+        width: 100%;
+        background-color: rgb(6, 191, 191);
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      #lastcards{
+        display: flex;
+        line-height: 0px;
+        /* border: 1px solid red; */
+      }
+      #lastcards > img{
+        height: 20px;
+        margin-top: 6px;
+      }
+      #lastbut1212  button:nth-child(1){
+        height: 40px;
+        width: 49%;
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: 15px;
+        border: 1px solid ;
+        border-radius: 4px;
+      }
+      #lastbut1212  button:nth-child(2){
+        height: 40px;
+        width: 49%;
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: 15px;
+        background-color: rgb(6, 191, 191);
+        border: none;
+        border-radius: 4px;
+      }
+      #lastbut1212 img{
+        height: 12px;
+        margin-top: 2px;
+      }
+     
+      
+      
+      .product-container {
+        padding: 0 10vw;
+        display: flex;
+        /* border: 1px solid red; */
+        overflow-x: auto;
+        scroll-behavior: smooth;
+      }
+      
+      .product-container::-webkit-scrollbar {
+        display: none;
+      }
+      
+
+      .pre-btn,
+      .nxt-btn {
+        /* font-size: 50px; */
+        border: none;
+        font-size: 40px;
+        font-weight: 600;
+        color: black;
+        width: 5vw;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        /* background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%); */
+        cursor: pointer;
+        z-index: 8;
+      }
+      
+      .pre-btn {
+        /* color: red; */
+        left: 0;
+        transform: rotate(180deg);
+      }
+      
+      .nxt-btn {
+        /* color: red; */
+        right: 0;
+      }
+      
+      /*  */
+      
+      .pre-btn:hover,
+      .nxt-btn:hover{
+        opacity: 1;
+        color: red;
+      }
+      
+
+         /* product slide-I end */
+
+
+    
+    
