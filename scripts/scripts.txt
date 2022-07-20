@@ -1,0 +1,1 @@
+all JS file should be kept in script folder

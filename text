@@ -1,1 +1,13 @@
+
 folder structure
+
+1. html file should be here in main folder
+2. create your branch on repective day from main branch  like fwXX_XXXX_day-2
+3. git checkout -m YOUR BRANCH NAME HERE - for changin branch from main to your branch
+4. git push origin main  - for pulling data from main to your branch
+5. then start to do work in your respective branch
+6. at the end of day push your code in branch, git add . , git commit -m     , and git push origin YOUR BRANCH NAME ,
+7. Create a pull request from your repository to merge to main branch 
+
+8. repeact all above saven steps every day.
+
