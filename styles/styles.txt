@@ -1,0 +1,1 @@
+All Css file should be kept in styles folder
