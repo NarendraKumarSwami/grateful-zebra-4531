@@ -1,3 +1,6 @@
+
+folder structure
+
 1. html file should be here in main folder
 2. create your branch on repective day from main branch  like fwXX_XXXX_day-2
 3. git checkout -m YOUR BRANCH NAME HERE - for changin branch from main to your branch
@@ -7,3 +10,4 @@
 7. Create a pull request from your repository to merge to main branch 
 
 8. repeact all above saven steps every day.
+
