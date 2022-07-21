@@ -513,7 +513,49 @@ h1{
           margin-bottom: 60px;
           color: rgb(51, 50, 50);
         }
+        #whyketto112{
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          grid-template-rows: repeat(2, 1fr);
+          width: 80%;
+          margin: auto;
+          gap: 50px;
+          margin-bottom: 70px;
+        }
+        #whyketto112 > div{
+          /* border: 1px solid; */
+
+        }
+        #whyketto112 img{
+          display: block;
+          margin: auto;
+          height: 40%;
+          width: 40%;
+
+        }
+        #whyketto112  p{
+          width: 90%;
+          text-align: center;
+          margin: auto;
+          font-size: 17px;
+          color: rgb(72, 72, 72);
+          font-weight: 600;
+        }
+        #whyketto112 hr{
+        background-color: orange;
+          width: 25%;
+          margin: auto;
+        }
+        
         /* whyKETTO< */
+
+
+
+        
+
+        /* success stories> */
+
+        /* success stories< */
 
     
     
