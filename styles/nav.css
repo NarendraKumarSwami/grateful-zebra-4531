@@ -3,25 +3,51 @@
     margin: 0;
     padding: 0;
  }
+ 
+ p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: rgb(94, 94, 94);
+    font-weight: 500;
+ }
+ h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+ }
+ #signin{
+    margin-top: 10px;
+ }
+ h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
 
 #container1{
     height: 70px;
     width: 100%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: white;
+
 }
 
 #logo{
     width: 5%;
     height: auto;
     margin: 10px;
-    margin-left: 100px;
+    margin-left: 50px;
     
 }
 #content{
     display: flex;
     gap: 25px;
     margin-top: 30px;
+    margin-left: 10px;
 }
 #vl {
     border-left: 2px solid grey;
@@ -30,6 +56,9 @@
  #search_img{
     height: 20px;
  } 
+ #search{
+    margin-left: -15px;
+ }
 
  #imgbox{
     display: flex;
@@ -44,35 +73,50 @@
    
 } 
 #left_nav{
-    width: 90px;
+    width: 120px;
     height: 40px;
-    border: 2px solid green;
+    border: 2px solid rgb(58, 168, 58);
     display: flex;
     /* margin: auto; */
     border-radius: 5px;
+    margin-top: 5px;
+    justify-content: center;
 
 }
 #left_nav2{
     width:190px;
     height: 40px;
-    border: 2px solid green;
+    border: 2px solid rgb(49, 184, 202);
     display: flex;
     justify-content: center;
     border-radius: 5px;
+    margin-top: 5px;
     
+}
+#shift{
+    margin-top: 5px;
+    color: #25afad;
+}
+#shift2{
+    margin-top: 5px;
+    color: #25D366;
 }
 
 
 /* ----------------------------------------------footer--------------------------------------- */
 #havequestion{
-    width: 100%;
-    height: 80px;
+    width: auto;
+    height: auto;
     padding: 30px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
+    /* position: sticky; */
+   
+    
 }
 #havequews{
     margin-left: 50px;
+    font-weight: 500;
 }
 /* ----------------------button-------------- */
 #fbbtn{
@@ -82,6 +126,7 @@
     /* border: 1px solid red; */
     background-color: #3b5998;
     border-radius: 30px;
+    margin-top: -10px;
 }
 #fbimg{
     height: 20px;
@@ -92,6 +137,7 @@
     font-size: 15px;
     margin: -30px;
     margin-left: 35px;   
+    
 }
 /* -----------------------------whatsappbtn---------- */
 #wtbtn{
@@ -101,6 +147,7 @@
     /* border: 1px solid red; */
     background-color: #25D366;
     border-radius: 30px;
+    margin-top: -10px;
 }
 #wtimg{
     height: 20px;
@@ -115,10 +162,10 @@
 
 
 #bigdiv{
-    background-color: rgb(0, 68, 40);
+    background-color: #023630;
     width: 100%;
-    height:auto;
-    /* height: 800px; */
+    /* height:auto; */
+    height: 500px;
    
 }
 #innerdiv{
@@ -239,14 +286,18 @@ hr{
 #knowmore{
     text-align: center;
     font-size: 20px;
-    width: 100%;
-    height: 60px;
-    margin-top: 20px;
+    width: auto;
+    height: auto;
+    margin-top: 25px;
 }
 #lform{
     width: 100%;
     height: 100px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    background-color: #9ad4d3;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
 }
 #lstart{
     margin-top: 5px;
@@ -259,6 +310,7 @@ hr{
     display: flex;
     justify-content: center;
     
+    
 }
 input{
     width: 250px;
@@ -267,4 +319,51 @@ input{
 #rightarrow{
     height: 45px;
     width: 45px;
+}
+
+
+/* --------------------------button---------- */
+/* #gg-arrow-right-o {
+    box-sizing: border-box;
+    position: relative; 
+    display: block;
+    width:42px;
+    height: 42px;
+     border: 2px solid;
+    transform: scale(var(--ggs,1));
+    border-radius: 20px;
+    margin: 10px;
+    background-color: #01a3a1;
+}
+#gg-arrow-right-o::after,
+#gg-arrow-right-o::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    right: 4px;
+     background-color: aliceblue; 
+}
+#gg-arrow-right-o::after {
+    width: 6px;
+    height: 6px;
+    border-top: 2px solid;
+    border-right: 2px solid;
+    transform: rotate(45deg);
+    bottom: 6px;
+     background-color: aliceblue; 
+}
+#gg-arrow-right-o::before {
+    width: 10px;
+    height: 2px;
+    bottom: 8px;
+    background: currentColor;
+
+    background-color: aliceblue; 
+    
+} */
+
+#arrowbtn{
+    width: 40px;
+    
 }
