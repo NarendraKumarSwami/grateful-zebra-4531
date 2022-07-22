@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How it Works</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        #head {
+            width: 50%;
+            margin: auto;
+            margin-top: 8%;
+            margin-bottom: 3%;
+            text-align: center;
+            color: #0398a3;
+        }
+
+        #slide-bar {
+            display: flex;
+            width: 90%;
+            justify-content: space-between;
+            margin: auto;
+
+            border: 1px solid red;
+
+        }
+
+        #form>div {
+            /* height: 20vh; */
+            text-align: center;
+            width: 95%;
+            border: 1px solid red;
+            margin: auto;
+
+        }
+
+        #form2 {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            justify-content: center;
+        }
+
+        #form2>input {
+            height: 7vh;
+            border: none;
+        }
+
+        #form2>select {
+            height: 7vh;
+            border: none;
+        }
+
+        #form2>button {
+            height: 7vh;
+            width: 65%;
+            background: white;
+            margin: auto;
+            font-size: 16px;
+            font-weight: bold;
+            color: #0398a3;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+        }
+
+        #form>button:nth-child(2) {
+            background-color: blue;
+        }
+
+        #next {
+            margin: auto;
+            width: 40%;
+            margin-top: 5%;
+            text-align: center;
+            color: black;
+        }
+
+        #next>p {
+            color: gray;
+            line-height: 30px;
+        }
+
+        #video-part {
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            /* border: 1px solid red; */
+            gap: 10px;
+            justify-content: space-evenly;
+            margin: auto;
+            margin-top: 30px;
+        }
+
+        #para {
+            width: 85%;
+            color: grey;
+
+        }
+
+        #para>p {
+            line-height: 30px
+        }
+
+        #vidio>embed {
+            width: 90%;
+            height: 78%;
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        }
+
+        #mobile-part {
+            width: 80%;
+            display: flex;
+            /* margin-left: 20px; */
+            margin: auto;
+            /* padding: 50px; */
+
+        }
+
+        #content {
+            margin-right: 10%;
+            margin-left: 5%;
+            /* line-height: 70px; */
+
+        }
+
+        #content>div>h3 {
+            color: #0398a3;
+        }
+
+        #content>div {
+            margin-bottom: 50%;
+            line-height: 30px;
+        }
+
+        #mobile-part>mobile {
+            height: 50%;
+            width: 50%;
+        }
+
+        #head2 {
+            text-align: center;
+            margin-top: 5%;
+            margin-bottom: 10%;
+        }
+
+        #bt {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            width: 45%;
+            height: 50px;
+            margin: auto;
+            gap: 25px;
+            margin-top: -8%;
+        }
+
+        #bt>button:nth-child(1) {
+            font-weight: bold;
+            font-size: 16px;
+            background-color: #0398a3;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+
+        #bt>button:nth-child(2) {
+            font-weight: bold;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 2px solid #0398a3;
+            background-color: white;
+            color: #0398a3;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+
+        #next-bt {
+            width: 80%;
+            display: flex;
+            margin: auto;
+            margin-top: 35px;
+            
+        }
+        #next-bt>p{
+          width: 100%;
+        }
+        #bn>button{
+            width: 35%;
+            height: 15%;
+            margin-right: 20px;
+         
+        }
+
+        #bn>button>img {
+            width: auto;
+            height: 40%;
+        }
+        #bn>button:nth-child(1){
+            font-weight: bold;
+            font-size: 16px;
+            border-radius: 50px; 
+            padding: 10px;  
+            border: none; 
+            color:white;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+background-color: #354f84;
+        }
+        #bn>button:nth-child(2){
+            background-color: #13cb6a;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 10px; 
+            border-radius: 50px;   
+            border: none; 
+            color:white;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="head">
+        <h1>Raising Funds was never this easy. Start a fundraiser in 5 minutes!</h1>
+    </div>
+    <div id="slide-bar">
+        <div>
+            <img src="https://ketto.gumlet.io/assets/images/how-it-works/slider-images/image10.jpg?w=768&dpr=1.0"
+                alt="">
+        </div>
+        <div id="form">
+            <div>
+                <img src="https://ketto.gumlet.io/assets/images/how-it-works/ketto-logo.svg?w=480&dpr=1.0" alt="error">
+                <h3>We know you are in urgent need of funds.</h3>
+                <p>Our personal fundraiser expert is waiting to get you started!</p>
+            </div>
+            <div id="form2">
+                <input type="text" placeholder="Name">
+                <input type="number" placeholder="Your Mobile Number">
+                <select>
+                    <Option>a</Option>
+                    <Option>d</Option>
+                    <Option>f</Option>
+                    <Option>g</Option>
+                    <Option>h</Option>
+                    <Option>y</Option>
+                    <Option>g</Option>
+                    <Option>g</Option>
+                </select>
+                <p>102 People started a fundraiser in last 2 days</p>
+                <button style="color: #0398a3; margin-bottom: 10px;">GET A CALL</button>
+                <button>CONNET ON WHATSAPP</button>
+            </div>
+        </div>
+    </div>
+    <div id="next">
+        <h1>What is Crowdfunding?</h1>
+        <p>In its simplest form, Crowdfunding is a practice of giving monetary funds to overcome specific social,
+            cultural, or economic hurdles individuals face in their daily lives.</p>
+    </div>
+    <div id="video-part">
+        <div id="vidio">
+            <embed src="https://www.youtube.com/embed/4uu-mKoFR6w">
+        </div>
+        <div id="para">
+            <h2>So how does Crowdfunding work On Ketto?</h2>
+            <p>Let us assume an individual, unfortunately, meets with an accident on the road. His medical expenses and
+                hospital bills start piling up. Now he needs ₹5 Lakh to pay his expensive medical bills. Fortunately,
+                his best friend signed up on Ketto’s crowdfunding platform, completed the process of submitting valid
+                documents needed for verification. In a few minutes, he created a crowdfunding campaign to raise funds
+                for his friend’s medical expenses. Now, this campaign can be shared with all his near and dear ones
+                through WhatsApp, Instagram, Twitter, Facebook and E-mail. In a matter of few minutes, funds start
+                coming in to support the financial needs of the injured friend.</p>
+        </div>
+    </div>
+    <div id="head2">
+        <h1>Start a Fundraiser in three simple steps</h1>
+    </div>
+    <div id="mobile-part">
+        <div id="im">
+            <img src="https://ketto.gumlet.io/assets/images/homepage/sac-separator.png?w=100&dpr=1.0" alt="#" />
+        </div>
+        <div id="content">
+            <div>
+                <h3>tart your fundraiser</h3>
+                <p>It’ll take only 2 minutes. Just tell us a few details about you and the ones you are raising funds
+                    for.</p>
+            </div>
+            <div>
+                <h3>tart your fundraiser</h3>
+                <p>It’ll take only 2 minutes. Just tell us a few details about you and the ones you are raising funds
+                    for.</p>
+            </div>
+            <div>
+                <h3>tart your fundraiser</h3>
+                <p>It’ll take only 2 minutes. Just tell us a few details about you and the ones you are raising funds
+                    for.</p>
+            </div>
+        </div>
+
+
+        <div id="mobile">
+            <video src="https://www.ketto.org/assets/videos/screen_recording.webm" autoplay controls
+                style="width: 100%;" height="80%"></video>
+        </div>
+    </div>
+    </div>
+    <div id="bt">
+        <button>START A FUNDRAISER FOR FREE</button>
+        <button>TALK TO US</button>
+    </div>
+    <div id="next-bt">
+        <p>Have any questions for us? Chat with our team on Facebook or WhatsApp now.</p>
+        <div id="bn">
+            <button>
+                <img src="https://icon-library.com/images/android-facebook-icon/android-facebook-icon-11.jpg" alt="error">
+                CHAT WITH US
+            </button>
+            <button>
+                <img src="https://seeklogo.com/images/W/whatsapp-icon-logo-BDC0A8063B-seeklogo.com.png" alt="error">
+                CHAT WITH US
+            </button>
+        </div>
+      
+    </div>
+</body>
+
+</html>
