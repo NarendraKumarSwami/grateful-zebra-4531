@@ -1,0 +1,57 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+}
+#container{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: flex-start;
+       width: 500px;
+       margin: auto;
+       margin-top: 10px;
+}
+
+
+#language{
+      padding-bottom: 10px;
+}
+#language> select{
+       padding: 5px 10px;
+}
+
+
+#foundraiser{
+      background-color: white;
+      border-radius: 10px;
+      width: 100%;
+}
+#foundraiser > h2{
+       padding: 20px;
+       text-align: center;
+}
+#foundraiser form{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+      
+}
+#foundraiser input, #foundraiser select{
+      padding: 5px;
+      margin: 20px 30px;
+}
+#foundraiser form div{
+        text-align: center;
+        margin-bottom: 0px;
+}
+#foundraiser button{
+       background-color: aqua;
+       border: none;
+       padding:  10px;
+       border-radius: 0px 0px 10px 10px 0px;
+}
+
