@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How it Works</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <style>
         body {
             margin: 0px;
@@ -23,56 +29,6 @@
             color: #0398a3;
         }
 
-        #slide-bar {
-            display: flex;
-            width: 90%;
-            justify-content: space-between;
-            margin: auto;
-
-            border: 1px solid red;
-
-        }
-
-        #form>div {
-            /* height: 20vh; */
-            text-align: center;
-            width: 95%;
-            border: 1px solid red;
-            margin: auto;
-
-        }
-
-        #form2 {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            justify-content: center;
-        }
-
-        #form2>input {
-            height: 7vh;
-            border: none;
-        }
-
-        #form2>select {
-            height: 7vh;
-            border: none;
-        }
-
-        #form2>button {
-            height: 7vh;
-            width: 65%;
-            background: white;
-            margin: auto;
-            font-size: 16px;
-            font-weight: bold;
-            color: #0398a3;
-            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-
-        }
-
-        #form>button:nth-child(2) {
-            background-color: blue;
-        }
 
         #net {
             margin: auto;
@@ -96,6 +52,7 @@
             justify-content: space-evenly;
             margin: auto;
             margin-top: 5%;
+            margin-left: 8%;
         }
 
         #para {
@@ -284,108 +241,126 @@
             gap: 20px;
 
         }
-        #grf>div{
-            /* border: 1px solid red; */
-        }
-        #grf>div>div{
+
+
+        #grf>div>div {
             margin-left: 10px;
             color: grey;
         }
-        #grf>div>div>h4+p{
+
+        #grf>div>div>h4+p {
             margin-top: -30px;
             font-weight: bold;
             width: 10%;
-    
+
             color: #0398a3;
         }
-        #grf>div>div>h4{
+
+        #grf>div>div>h4 {
             font-size: 17px;
         }
-      #butt{
-        display: flex;
-        color: #0398a3
-        ;
-        margin: auto;
-      }
-      #seco{
-        display: flex;
-        margin: auto;
-        width: 50%;
-        height: 50px;
-        gap: 20px;
-        margin-top: 2%;
-     
-      }
-      #seco>button{
-        width: 50%;
-        font-size: 17px;
-        border-radius: 5px;
-        
-      }
-      #seco>button:nth-child(1){
-        width:60% ;
-        border: none;
-        background-color: #01bfbd;
-        color: white;
-        padding: 10px;
-        font-weight: bold;
-      }
-      #seco>button:nth-child(2){
-      
-        border: none;
-        background-color:white;
-        color: #01bfbd;
-        padding: 10px;
-        border: 2px solid #01bfbd;
-        font-weight: bold;
-      }
-      #seco>button:nth-child(2):hover{
-        background-color: #01bfbd;
-        color: white;
-      }
-      /* f& q section */
-      .layout{
-			/* width: 600px; */
-            width: 80%;
-			margin: auto;
-		}
-		.accordion{
-			padding: 10px;
-			margin-top: 10px;
-			margin-bottom: 10px;
-			/* background: rgb(105, 206, 105); */
-			border-radius: 10px;
-		}
-		.accordion__question p{
-			margin: 5px;
-			padding: 0;
-			font-family: Verdana;
-			/* font-size: 20px; */
-		}
-		.accordion__answer p{
-			margin: 5px;
-			padding: 10px;
-         
-			
-			font-family: Verdana, Geneva, Tahoma, sans-serif;
-			color: gray;
-			/* background: rgb(82, 170, 122); */
-			border-radius: 10px;
-		}
-		.accordion:hover{
-			cursor: pointer;
-		}
-		.accordion__answer {
-			display: none;
-		}
-		.accordion.active .accordion__answer {
-			display: block;
-		}
-        #fa{
+
+        #butt {
+            display: flex;
+            color: #0398a3;
+            margin: auto;
+        }
+
+        #seco {
+            display: flex;
+            margin: auto;
+            width: 50%;
+            height: 50px;
+            gap: 20px;
+            margin-top: 2%;
+
+        }
+
+        #seco>button {
+            width: 50%;
+            font-size: 17px;
+            border-radius: 5px;
+
+        }
+
+        #seco>button:nth-child(1) {
+            width: 60%;
+            border: none;
+            background-color: #01bfbd;
+            color: white;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        #seco>button:nth-child(2) {
+
+            border: none;
+            background-color: white;
+            color: #01bfbd;
+            padding: 10px;
+            border: 2px solid #01bfbd;
+            font-weight: bold;
+        }
+
+        #seco>button:nth-child(2):hover {
+            background-color: #01bfbd;
+            color: white;
+        }
+
+        /* f& q section */
+        .layout {
+            /* width: 600px; */
             width: 80%;
             margin: auto;
         }
-        #next{
+
+        .accordion {
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            /* background: rgb(105, 206, 105); */
+            border-radius: 10px;
+        }
+
+        .accordion__question p {
+            margin: 5px;
+            padding: 0;
+            font-family: Verdana;
+            /* font-size: 20px; */
+        }
+
+        .accordion__answer p {
+            margin: 5px;
+            padding: 10px;
+
+
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: gray;
+            /* background: rgb(82, 170, 122); */
+            border-radius: 10px;
+        }
+
+        .accordion:hover {
+            cursor: pointer;
+        }
+
+        .accordion__answer {
+            display: none;
+        }
+
+        .accordion.active .accordion__answer {
+            display: block;
+        }
+
+        #fa {
+            width: 80%;
+            margin: auto;
+        }
+        #fa>h3{
+            color: #444;
+        }
+
+        #next {
             width: 78%;
             display: flex;
             margin: auto;
@@ -400,7 +375,286 @@
             color: grey;
         }
 
-    
+        .item {
+            width: 95%;
+            /* height: 10%; */
+
+            padding: 20px;
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+
+        #carousel {
+
+            display: flex;
+
+        }
+
+        #carousel>img {
+            width: 90px;
+            height: 90px;
+            margin-right: 10px;
+        }
+
+        #Parag {
+            /* line-height: 15px; */
+            margin-top: -20px;
+            color: #444;
+
+        }
+
+        #Parag>p {
+            margin-top: -15px;
+            font-size: 13px;
+        }
+
+        #Parag>h3 {
+            margin-top: -3px;
+        }
+
+        #Parag>p+h3 {
+
+
+            color: #444;
+            font-size: 15px;
+        }
+      .col{
+        color: #01bfbd;
+      }
+
+        hr {
+            margin-top: -10px;
+        }
+
+        #part-2 {
+            margin-top: -15px;
+        }
+
+        #part-2>h4 {
+            color: #444;
+        }
+
+        #part-2>p {
+            margin-top: -10px;
+            color: gray;
+            font-size: 17px;
+            font-style: italic;
+        }
+
+        .hy {
+            text-align: right;
+            font-style: italic;
+        }
+
+        .owl-carousel {
+            /* width: 90%; */
+            margin-top: 5%;
+
+
+        }
+
+        #maine {
+            margin-top: 8%;
+            /* margin-bottom: 10%; */
+
+            background-color: #f5f5f5;
+            height: 100%;
+        }
+
+        #maine>h1 {
+            text-align: center;
+        }
+
+        #maine>h1+p {
+            text-align: center;
+        }
+
+        .hy>h4>a {
+            color: #0398a3;
+        }
+
+        /* slide part here  */
+        #slide-bar {
+            display: flex;
+            width: 80%;
+            height: 150%;
+            justify-content: space-between;
+            margin: auto;
+
+            /* border: 1px solid red; */
+          
+
+        }
+        #boox>img{
+           
+            border-radius: 10px;
+        }
+
+        #form {
+         margin-left:5%;
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            padding: 10px 15px 30px 15px;
+            width: 55%;
+          height: 100%;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+           
+        }
+
+        #form>img {
+            margin: auto;
+        }
+
+        #form>img+h3+p {
+            margin-left: 10%;
+            font-size: 14px;
+            text-align: center;
+            margin-right: 10%;
+            margin-top: -2%;
+
+        }
+
+        #form>img+h3 {
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        #form>input {
+            height: 10vh;
+            border: none;
+            border-bottom: 1px solid silver;
+            font-size: 16px;
+            
+        }
+        #form>input:hover{
+        border: white;
+        }
+
+        #form>select {
+            height: 10vh;
+            border: none;
+            font-size: 18px;
+        }
+
+        #butto>button {
+            height: 8vh;
+            width: 65%;
+            background: white;
+            
+            margin: auto;
+            font-size: 16px;
+            font-weight: bold;
+           
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+        }
+        #butto>button:nth-child(1){
+            border: 1px solid #0398a3;
+           margin-bottom: 2%;
+           color: #01bfbd;
+        }
+
+        #butto>button:nth-child(2) {
+            background-color: #25d366;
+            color: white;
+            border: none;
+        }
+        #form>select+p{
+            color: #0398a3;
+            font-size: 14px;
+            margin-top: -1%;
+        }
+        #some{
+           display: flex;
+           height: 15%;
+         margin-top: -10%;
+       padding: 20px;
+         border-radius: 5px;
+         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          
+        }
+        #some>div{
+           margin-top: -5%;
+            /* padding: 10px 60px 10px 60px; */
+            /* margin-left: 50px; */
+            margin: auto;
+            
+        }
+        #some>div>h2{
+            color: #0398a3;
+            font-size: 20px;
+            text-align: center;
+            /* margin-top: -5%; */
+        }
+        #some>div>h2+p{
+            /* margin-top: -4%; */
+            font-size: 15px;
+           
+        }
+       
+        /* slide image */
+        @keyframes fade{
+  from{
+    opacity:0.4;
+  }
+  to{
+    opacity:1;
+  }
+}
+
+
+
+#slider{
+  margin:0 auto;
+  width:100%;
+  height: 80%;
+  overflow:hidden;
+}
+
+.slides{
+  overflow:hidden;
+  animation-name:fade;
+  animation-duration:1s;
+  display:none;
+}
+
+.slides>img{
+  width:100%;
+  /* height: 200%; */
+  border-radius: 10px;
+}
+
+#dot{
+  margin:0 auto;
+  text-align:center;
+}
+.dot{
+  display:inline-block;
+  border-radius:50%;
+  background:#d3d3d3;
+  padding:8px;
+  margin:10px 5px;
+}
+
+.active{
+  background:black;
+}
+
+@media (max-width:567px){
+  #slider{
+    width:100%;
+
+  }
+}
+
+#heading{
+  display:block;
+  text-align:center;
+  font-size:2em;
+  margin:10px 0px;
+
+}
     </style>
 </head>
 
@@ -409,34 +663,78 @@
         <h1>Raising Funds was never this easy. Start a fundraiser in 5 minutes!</h1>
     </div>
     <div id="slide-bar">
-        <div>
-            <img src="https://ketto.gumlet.io/assets/images/how-it-works/slider-images/image10.jpg?w=768&dpr=1.0"
-                alt="">
+        <div id="boox">
+            <div id="slider">  
+                <div class="slides">  
+                  <img src="https://ketto.gumlet.io/assets/images/how-it-works/slider-images/image1.jpg?w=768&dpr=1.0" width="100%" />
+               
+                 </div>
+                  
+                  <div class="slides">  
+                  <img src="https://ketto.gumlet.io/assets/images/how-it-works/slider-images/image2.jpg?w=768&dpr=1.0" width="100%" />
+                </div>
+                  
+                  <div class="slides">  
+                  <img src="https://ketto.gumlet.io/assets/images/how-it-works/slider-images/image3.png?w=768&dpr=1.0" width="100%" />
+                </div> 
+                  
+                   <div class="slides">  
+                  <img src="https://ketto.gumlet.io/assets/images/how-it-works/slider-images/image4.png?w=768&dpr=1.0" width="100%" />
+                </div> 
+                  
+                <div class="slides">  
+                  <img src="https://ketto.gumlet.io/assets/images/how-it-works/slider-images/image5.jpg?w=768&dpr=1.0" width="100%" />
+                </div>  
+                  
+                  <div id="dot"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                 </div>
+        <div id="some">
+            <div>
+                <h2>55 Lakh+</h2>
+                <p>DONORS<p>
+                    
+            </div>
+            
+            <div>
+                <h2>2 Lakh+</h2>
+                <p>FUNDRAISERS<p>
+                   
+            </div>
+            
+            <div>
+                <h2>0%</h2>
+                <p>PLATFORM FEE<p>
+            </div>
+            
+        </div>
         </div>
         <div id="form">
-            <div>
-                <img src="https://ketto.gumlet.io/assets/images/how-it-works/ketto-logo.svg?w=480&dpr=1.0" alt="error">
-                <h4>We know you are in urgent need of funds.</h4>
-                <p>Our personal fundraiser expert is waiting to get you started!</p>
-            </div>
-            <div id="form2">
-                <input type="text" placeholder="Name">
-                <input type="number" placeholder="Your Mobile Number">
-                <select>
-                    <option> What will be the funds used for?</option>
-                    <Option>Cancer treatment</Option>
-                    <Option>accident treatment</Option>
-                    <Option>Liver/Kidney transplant</Option>
-                    <Option>Heart operation</Option>
-                    <Option>Pre-mature baby care (NICU)</Option>
-                    <Option>Medicines(Ongoing transplant)</Option>
-                    <Option>Memorial (Patient expired)</Option>
-                    <Option>Others</Option>
-                </select>
-                <p>102 People started a fundraiser in last 2 days</p>
-                <button style="color: #0398a3; margin-bottom: 10px;">GET A CALL</button>
+
+            <img src="https://ketto.gumlet.io/assets/images/how-it-works/ketto-logo.svg?w=480&dpr=1.0" alt="error">
+            <h3>We know you are in urgent need of funds.</h3>
+            <p>Our personal fundraiser expert is waiting to get you started!</p>
+
+
+            <input type="text" placeholder="Name">
+            <input type="number" placeholder="Your Mobile Number">
+            <select>
+                <option> What will be the funds used for?</option>
+                <Option>Cancer treatment</Option>
+                <Option>accident treatment</Option>
+                <Option>Liver/Kidney transplant</Option>
+                <Option>Heart operation</Option>
+                <Option>Pre-mature baby care (NICU)</Option>
+                <Option>Medicines(Ongoing transplant)</Option>
+                <Option>Memorial (Patient expired)</Option>
+                <Option>Others</Option>
+            </select>
+            <p>102 People started a fundraiser in last 2 days</p>
+            <div id="butto">
+                <button>GET A CALL</button>
                 <button>CONNET ON WHATSAPP</button>
             </div>
+          
+
         </div>
     </div>
     <div id="net">
@@ -518,12 +816,12 @@
             <div>
                 <h4>Payout</h4>
                 <p>_</p>
-          
+
                 <p>
                     This is your money, you can withdraw it at any point during the course of your fundraiser
                 </p>
             </div>
-           
+
         </div>
         <div>
             <div>
@@ -533,7 +831,7 @@
                     We accept donations in multiple currencies from anywhere in the world
                 </p>
             </div>
-           
+
         </div>
         <div>
             <div>
@@ -543,18 +841,19 @@
                     Multiple people manage and fundraise for your cause
                 </p>
             </div>
-           
+
         </div>
         <div>
             <div>
                 <h4>Personalized Web App</h4>
                 <p>_</p>
                 <p>
-                    Get instant updates on your fundraiser's progress via instant alerts, email and track everything realtime on Ketto's web app
+                    Get instant updates on your fundraiser's progress via instant alerts, email and track everything
+                    realtime on Ketto's web app
 
                 </p>
             </div>
-           
+
         </div>
         <div>
             <div>
@@ -564,7 +863,7 @@
                     A dedicated fundraiser expert guides you through your fundraising
                 </p>
             </div>
-           
+
         </div>
         <div>
             <div>
@@ -575,7 +874,7 @@
                     You will receive all the raised amount after the transactional, processing fee.
                 </p>
             </div>
-           
+
         </div>
         <div>
             <div>
@@ -587,7 +886,7 @@
 
                 </p>
             </div>
-           
+
         </div>
         <div>
             <div>
@@ -597,7 +896,7 @@
                     We provide marketing and promotional support for your fundraiser
                 </p>
             </div>
-           
+
         </div>
         <div>
             <div>
@@ -608,120 +907,325 @@
 
                 </p>
             </div>
-           
+
         </div>
-      
+
     </div>
-  <div id="seco">
-    <button>START A FOUNDRAISER</button>
-    <button>BROWSE FUNDRAISER</button>
-  </div>
-  <!-- //course is here -->
+    <div id="seco">
+        <button>START A FOUNDRAISER</button>
+        <button>BROWSE FUNDRAISER</button>
+    </div>
+    <!-- //course is here -->
 
+    <div id="maine">
+        <h1>Most Promising Platform To Raise Funds</h1>
+        <p>Millions of people succesfully raised funds on Ketto for their cause. Hear what some of our successful
+            campaigners have to say.</p>
 
+        <div class="owl-carousel owl-theme">
 
-  <div id="fa">
-    <h3 >FAQs</h3><hr>
-  </div>
-  <div class="layout">
-    <div class="accordion">
-        <div class="accordion__question">
-            <p>How do I raise funds?</p>
+            <div class="item">
+                <div id="carousel">
+                    <img src="https://cdn.amomama.com/62595664a8722accbaa4c80d12589cc7.jpg?width=650&height=340" alt="">
 
-        </div>
-        <div class="accordion__answer">
-            <p>To Start a Fundraiser, follow the three steps:</p>
-            <p>1. Sign up on Ketto</p>
-            <p>2. Fill up the form</p>
-            <p>3. Hit Submit</p>
+                    <div id="Parag">
+                        <h2>Constable Deepak</h2>
+                        <p>Campaigner</p>
+                        <h3>Raised <span class="col" >Rs.9,57,401</span> for Constable medical treatment</h3>
+
+                    </div>
+                </div>
+
+                <hr>
+                <div id="part-2">
+                    <h4>Testimonial:</h4>
+                    <p>My liver transplant was stuck because my family didn't have funds to afford it. It's only because
+                        I
+                        knocked on Ketto's door theat I'm healthy today. A big thank you to each and every one who gave
+                        me moey.
+                        I wouldn't be alive without you.</p>
+                </div>
+                <div class="hy">
+                    <h4><a href="https://www.ketto.org/fundraiser/opinionx">Visit Campaign</a> </h4>
+                </div>
+            </div>
+            <div class="item">
+                <div id="carousel">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe3cqXFmKUZX544mKKkI0n4Zglrh1pR5K6DQ&usqp=CAU" alt="">
+
+                    <div id="Parag">
+                        <h2>Saurabh Bodas</h2>
+                        <p>Campaigner</p>
+                        <h3>Raised <span class="col" >Rs.5,08,675</span> for Constable medical treatment</h3>
+                    </div>
+                </div>
+
+                <hr>
+                <div id="part-2">
+                    <h4>Testimonial:</h4>
+                    <p>My liver transplant was stuck because my family didn't have funds to afford it. It's only because
+                        I
+                        knocked on Ketto's door theat I'm healthy today. A big thank you to each and every one who gave
+                        me moey.
+                        I wouldn't be alive without you.</p>
+                </div>
+                <div class="hy">
+                    <h4><a href="https://www.ketto.org/fundraiser/opinionx">Visit Campaign</a> </h4>
+                </div>
+            </div>
+            <div class="item">
+                <div id="carousel">
+                    <img src="https://starhospitals.in/img/internationalpatients/internationa-patient-300x150.png" alt="">
+
+                    <div id="Parag">
+                        <h2>Manish Vyas</h2>
+                        <p>Campaigner</p>
+                        <h3>Raised <span class="col" >Rs.5,66,598</span> for Constable medical treatment</h3>
+                    </div>
+                </div>
+
+                <hr>
+                <div id="part-2">
+                    <h4>Testimonial:</h4>
+                    <p>My liver transplant was stuck because my family didn't have funds to afford it. It's only because
+                        I
+                        knocked on Ketto's door theat I'm healthy today. A big thank you to each and every one who gave
+                        me moey.
+                        I wouldn't be alive without you.</p>
+                </div>
+                <div class="hy">
+                    <h4><a href="https://www.ketto.org/fundraiser/opinionx">Visit Campaign</a> </h4>
+                </div>
+            </div>
+            <div class="item">
+                <div id="carousel">
+                    <img src="https://media.istockphoto.com/photos/female-nurse-comfort-support-old-male-patient-picture-id1330045921?b=1&k=20&m=1330045921&s=170667a&w=0&h=4jNyJeLhpDN2AVFIB0TZWFJS5iOU58StZcgZhW-LDPs=" alt="">
+
+                    <div id="Parag">
+                        <h2>Dhruv Pandey</h2>
+                        <p>Campaigner</p>
+                        <h3>Raised <span class="col" >Rs.6,53,336</span> for Constable medical treatment</h3>
+
+                    </div>
+                </div>
+
+                <hr>
+                <div id="part-2">
+                    <h4>Testimonial:</h4>
+                    <p>My liver transplant was stuck because my family didn't have funds to afford it. It's only because
+                        I
+                        knocked on Ketto's door theat I'm healthy today. A big thank you to each and every one who gave
+                        me moey.
+                        I wouldn't be alive without you.</p>
+                </div>
+                <div class="hy">
+                    <h4><a href="https://www.ketto.org/fundraiser/opinionx">Visit Campaign</a> </h4>
+                </div>
+            </div>
+            <div class="item">
+                <div id="carousel">
+                    <img src="https://starhospitals.in/img/internationalpatients/Preparing%20for%20discharge.jpg" alt="">
+
+                    <div id="Parag">
+                        <h2>Nitya</h2>
+                        <p>Campaigner</p>
+                        <h3>Raised <span class="col" >Rs.25,85,870</span> for Constable medical treatment</h3>
+                    </div>
+                </div>
+
+                <hr>
+                <div id="part-2">
+                    <h4>Testimonial:</h4>
+                    <p>My liver transplant was stuck because my family didn't have funds to afford it. It's only because
+                        I
+                        knocked on Ketto's door theat I'm healthy today. A big thank you to each and every one who gave
+                        me moey.
+                        I wouldn't be alive without you.</p>
+                </div>
+                <div class="hy">
+                    <h4><a href="https://www.ketto.org/fundraiser/opinionx">Visit Campaign</a> </h4>
+                </div>
+            </div>
+            <div class="item">
+                <div id="carousel">
+                    <img src="https://media.istockphoto.com/photos/young-doctor-on-a-house-call-picture-id1297475344?k=20&m=1297475344&s=612x612&w=0&h=SPm-aAZgzgj0Twc4k6JNtx7R2fgzsFUiGa2IEnxYtW8=" alt="">
+
+                    <div id="Parag">
+                        <h2>Saurabh</h2>
+                        <p>Campaigner</p>
+                        <h3>Raised <span class="col" >Rs.9,57,401</span> for Constable medical treatment</h3>
+                    </div>
+                </div>
+
+                <hr>
+                <div id="part-2">
+                    <h4>Testimonial:</h4>
+                    <p>My liver transplant was stuck because my family didn't have funds to afford it. It's only because
+                        I
+                        knocked on Ketto's door theat I'm healthy today. A big thank you to each and every one who gave
+                        me moey.
+                        I wouldn't be alive without you.</p>
+                </div>
+                <div class="hy">
+                    <h4><a href="https://www.ketto.org/fundraiser/opinionx">Visit Campaign</a> </h4>
+                </div>
+            </div>
 
         </div>
     </div>
-    <div class="accordion">
-        <div class="accordion__question">
-            <p>Can I raise funds for a friend as well?</p>
 
+
+    <div id="fa">
+        <h3>FAQs</h3>
+        <hr>
+    </div>
+    <div class="layout">
+        <div class="accordion">
+            <div class="accordion__question">
+                <p>How do I raise funds?</p>
+
+            </div>
+            <div class="accordion__answer">
+                <p>To Start a Fundraiser, follow the three steps:</p>
+                <p>1. Sign up on Ketto</p>
+                <p>2. Fill up the form</p>
+                <p>3. Hit Submit</p>
+
+            </div>
         </div>
-        <div class="accordion__answer">
-            <p>
-                Yes, you can also raise funds for a friend, a loved one or anyone in need during life's crucial moments
-            </p>
+        <div class="accordion">
+            <div class="accordion__question">
+                <p>Can I raise funds for a friend as well?</p>
+
+            </div>
+            <div class="accordion__answer">
+                <p>
+                    Yes, you can also raise funds for a friend, a loved one or anyone in need during life's crucial
+                    moments
+                </p>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion__question">
+                <p>Does the raised amount reach the individual directly?</p>
+
+            </div>
+            <div class="accordion__answer">
+                <p>
+                    With Ketto, the money you collect goes directly to the bank account associated with your fundraising
+                    page. Raising money for yourself or anyone has never been easier.
+                </p>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion__question">
+                <p>Is it safe?</p>
+
+            </div>
+            <div class="accordion__answer">
+                <p>
+                    Your Ketto fundraiser features the very best in secure payment encryption technology. Not only are
+                    your donors online payments safe, your money is stored securely until you're ready to request a
+                    withdrawal via electronic bank transfer.
+                </p>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion__question">
+                <p>What if I don't reach my goal?</p>
+
+            </div>
+            <div class="accordion__answer">
+                <p>
+                    No problem. You will still receive the raised amount after the transactional processing fee.
+                    To know more about transactional processing fee, visit: www.ketto.org/support/plans-and-pricing
+                </p>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion__question">
+                <p>I have more questions, who do I write to?</p>
+
+            </div>
+            <div class="accordion__answer">
+                <p>
+                    You can write to info@ketto.org Know someone who needs funds for medical treatment urgently? Help
+                    them out by sharing this information with them.
+                </p>
+            </div>
         </div>
     </div>
-    <div class="accordion">
-        <div class="accordion__question">
-            <p>Does the raised amount reach the individual directly?</p>
 
+    <div id="next">
+        <p>Have any questions for us? Chat with our team on Facebook or WhatsApp now.</p>
+        <div id="bn">
+            <button>
+                <img src="https://icon-library.com/images/android-facebook-icon/android-facebook-icon-11.jpg"
+                    alt="error">
+                CHAT WITH US
+            </button>
+            <button>
+                <img src="https://seeklogo.com/images/W/whatsapp-icon-logo-BDC0A8063B-seeklogo.com.png" alt="error">
+                CHAT WITH US
+            </button>
         </div>
-        <div class="accordion__answer">
-            <p>
-                With Ketto, the money you collect goes directly to the bank account associated with your fundraising page. Raising money for yourself or anyone has never been easier.
-            </p>
-        </div>
+
     </div>
-    <div class="accordion">
-        <div class="accordion__question">
-            <p>Is it safe?</p>
-
-        </div>
-        <div class="accordion__answer">
-            <p>
-                Your Ketto fundraiser features the very best in secure payment encryption technology. Not only are your donors online payments safe, your money is stored securely until you're ready to request a withdrawal via electronic bank transfer.
-            </p>
-        </div>
-    </div>
-    <div class="accordion">
-        <div class="accordion__question">
-            <p>What if I don't reach my goal?</p>
-
-        </div>
-        <div class="accordion__answer">
-            <p>
-                No problem. You will still receive the raised amount after the transactional processing fee.
-                To know more about transactional processing fee, visit: www.ketto.org/support/plans-and-pricing
-            </p>
-        </div>
-    </div>
-    <div class="accordion">
-        <div class="accordion__question">
-            <p>I have more questions, who do I write to?</p>
-
-        </div>
-        <div class="accordion__answer">
-            <p>
-                You can write to info@ketto.org Know someone who needs funds for medical treatment urgently? Help them out by sharing this information with them.
-            </p>
-        </div>
-    </div>
-</div>
-
-<div id="next">
-    <p>Have any questions for us? Chat with our team on Facebook or WhatsApp now.</p>
-    <div id="bn">
-        <button>
-            <img src="https://icon-library.com/images/android-facebook-icon/android-facebook-icon-11.jpg"
-                alt="error">
-            CHAT WITH US
-        </button>
-        <button>
-            <img src="https://seeklogo.com/images/W/whatsapp-icon-logo-BDC0A8063B-seeklogo.com.png" alt="error">
-            CHAT WITH US
-        </button>
-    </div>
-
-</div>
 </body>
 <script>
-    let answers=document.querySelectorAll(".accordion");
-    answers.forEach((event)=>{
-        event.addEventListener('click',()=>{
-            if(event.classList.contains("active")){
+    let answers = document.querySelectorAll(".accordion");
+    answers.forEach((event) => {
+        event.addEventListener('click', () => {
+            if (event.classList.contains("active")) {
                 event.classList.remove("active");
             }
-            else{
+            else {
                 event.classList.add("active");
             }
         })
-    })
+    });
+
+
+    $(function () {
+        // Owl Carousel
+        let owl = $(".owl-carousel");
+        owl.owlCarousel({
+            items: 3,
+            margin: 40,
+            loop: true,
+            nav: true
+        });
+    });
+
+    var index = 0;
+var slides = document.querySelectorAll(".slides");
+var dot = document.querySelectorAll(".dot");
+
+function changeSlide(){
+
+  if(index<0){
+    index = slides.length-1;
+  }
+  
+  if(index>slides.length-1){
+    index = 0;
+  }
+  
+  for(let i=0;i<slides.length;i++){
+    slides[i].style.display = "none";
+    dot[i].classList.remove("active");
+  }
+  
+  slides[index].style.display= "block";
+  dot[index].classList.add("active");
+  
+  index++;
+  
+  setTimeout(changeSlide,2000);
+  
+}
+
+changeSlide();
 </script>
+
 </html>
