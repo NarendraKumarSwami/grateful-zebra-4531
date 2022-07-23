@@ -79,6 +79,7 @@ body {
        text-decoration: none;
 }
 #container+div{
+       padding: 5px;
        text-align: center;
 }
 

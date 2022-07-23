@@ -14,7 +14,12 @@
 //        appendPopLogin();
 // }
 // crowdfuncding 
+import { addLanguage} from '../components/language_options.js';
 
+   window.onload = ()=>{
+          addLanguage(document.getElementById('language'));
+          
+}
 
 document.querySelector('form').addEventListener('submit', () =>{
       event.preventDefault();
