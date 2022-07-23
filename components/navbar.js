@@ -1,5 +1,6 @@
 function navbar(){
     return` <div id="logo">
+    
     <img src="https://ketto.gumlet.io/assets/images/logo-light-bg.svg?w=70&dpr=1.0">
    </div>
    <div id="content">
@@ -7,6 +8,7 @@ function navbar(){
     <h4>Fundraise For </h4>
     <h4>How it works</h4>
     <div id="vl"></div>
+  
     <img id="search_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfbiyVfcLXpyNbNJHupID7hbeDmZytHMJ42Q&usqp=CAU" >
     <h4 id="search">Search</h4>
    </div>
@@ -20,9 +22,37 @@ function navbar(){
 <div id="left_nav2">
      <h3 id="shift">Start a Fundraiser</h3>
  </div>
- <h3 id="signin" >Sign In</h3>
+ <div id="SignIn">
+ <h3 id="signin">Sign In</h3>
+ </div>
 </div>
 
+
+
+
+<div id="hideshow">
+    <input type="checkbox" id="openSidebarMenu">
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+    <div class="spinner top"></div>
+    <div class="spinnner middle"></div>
+    <div class="spinner bottom"></div>
+</label>
+    <div id="sidebarMenu">
+        <ul class="menu">
+            <div id="kettoimgg">
+                <img id="realkettoimg" src="https://ketto.gumlet.io/assets/images/logo-light-bg.svg?w=70&dpr=1.0" alt="">
+            </div>
+            <li>
+            <input type="search" placeholder="Type to Search...">
+        </li>
+            <li>To view fundraisers you have supported on Ketto Click here</li>
+            <li>Browse Fundraisers</li>
+            <li>Fundraise For</li>
+            <li>How It Works</li>
+            <li>Get us on Whatsapp</li>
+            <li>Sign In</li>
+        </ul>
+    </div>
 </div>`
 };
 
