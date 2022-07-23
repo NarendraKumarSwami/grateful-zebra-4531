@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // import navbar.js for navbar 
   import {navbar} from '../components/navbar.js';
 // import sign_in.js file for append
@@ -13,6 +14,9 @@ window.onload  = () =>{
 
        appendPopLogin();
 }
+=======
+
+>>>>>>> 32ed42c4a0f22932cc6ebdebb3dd62e33b57b1d1
 // crowdfuncding 
 
 
@@ -37,3 +41,8 @@ function User(type, name, email, password, mobile){
         this.mobile = mobile
 
 }
+<<<<<<< HEAD
+=======
+ 
+
+>>>>>>> 32ed42c4a0f22932cc6ebdebb3dd62e33b57b1d1
