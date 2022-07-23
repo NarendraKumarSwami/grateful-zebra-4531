@@ -1,0 +1,19 @@
+/* this is style file for pop login */
+#loginPopUp{
+       display: flex;
+       flex-direction: column;
+       position: absolute;
+       top: 20%;
+       left: 20%;
+       margin: auto;
+}
+
+
+#login-flex{
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+       align-items: center;
+       padding: 10px;
+       margin: auto;
+}
