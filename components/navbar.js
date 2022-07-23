@@ -14,7 +14,7 @@ function navbar(){
             <option value="">Other Causes</option>
           
           </select>
-        <a href=""><p id="ptag1st">How it works</p></a>
+        <a href="./How_it_works.html"><p id="ptag1st">How it works</p></a>
         <div id="vl"></div>
         <img id="search_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfbiyVfcLXpyNbNJHupID7hbeDmZytHMJ42Q&usqp=CAU" >
         <p id="search">Search</p>
