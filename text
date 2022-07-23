@@ -1,20 +1,73 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 3f88e5cc6646c4a4bfaf22ba2a06e26d149822a8
 <<<<<<< main
 Hello team members
 =======
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> f913a48e420a4563c60394f32b79e7a21788c4b1
+=======
+>>>>>>> 97fcd460e717165d1e416e7bc4ddd4817c9142e2
+=======
+
+Hello team members
+
+
+
+>>>>>>> 32ed42c4a0f22932cc6ebdebb3dd62e33b57b1d1
+>>>>>>> 3f88e5cc6646c4a4bfaf22ba2a06e26d149822a8
 folder structure
 componetns - for all commponets
 scripts - for all js file
 styles - for all css file
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> local
 =======
 =======
 >>>>>>> f913a48e420a4563c60394f32b79e7a21788c4b1
 
+folder structure
+=======
+<<<<<<< HEAD
+>>>>>>> local
+=======
+=======
+>>>>>>> 97fcd460e717165d1e416e7bc4ddd4817c9142e2
+
+folder structure
+=======
+>>>>>>> 32ed42c4a0f22932cc6ebdebb3dd62e33b57b1d1
+>>>>>>> 3f88e5cc6646c4a4bfaf22ba2a06e26d149822a8
+
+1. html file should be here in main folder
+2. create your branch on repective day from main branch  like fwXX_XXXX_day-2
+3. git checkout -m YOUR BRANCH NAME HERE - for changin branch from main to your branch
+4. git push origin main  - for pulling data from main to your branch
+5. then start to do work in your respective branch
+6. at the end of day push your code in branch, git add . , git commit -m     , and git push origin YOUR BRANCH NAME ,
+7. Create a pull request from your repository to merge to main branch 
+
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 3f88e5cc6646c4a4bfaf22ba2a06e26d149822a8
+8. repeact all above saven steps every day.
+
+<<<<<<< HEAD
+// git pull main -- 
+// ---- work -- merge request
+=======
+>>>>>>> 7b2385d80225339019830f9c6e94da20163554b3
+<<<<<<< HEAD
+>>>>>>> f913a48e420a4563c60394f32b79e7a21788c4b1
+=======
+>>>>>>> 97fcd460e717165d1e416e7bc4ddd4817c9142e2
+=======
 folder structure
 
 1. html file should be here in main folder
@@ -27,9 +80,5 @@ folder structure
 
 8. repeact all above saven steps every day.
 
-<<<<<<< HEAD
-// git pull main -- 
-// ---- work -- merge request
-=======
->>>>>>> 7b2385d80225339019830f9c6e94da20163554b3
->>>>>>> f913a48e420a4563c60394f32b79e7a21788c4b1
+>>>>>>> 32ed42c4a0f22932cc6ebdebb3dd62e33b57b1d1
+>>>>>>> 3f88e5cc6646c4a4bfaf22ba2a06e26d149822a8
