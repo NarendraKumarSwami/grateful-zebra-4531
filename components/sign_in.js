@@ -21,14 +21,15 @@ let appendPopLogin  = ()=>{
 
           let close = document.createElement('i');
           close.setAttribute('class', 'fa fa-close');
-
-          let head = document.createElement('h3');
+          close.addEventListener('click', toggleLogin);
+          let head = document.createElement('h1');
           head.innerText = 'Login';
 
           let flex = document.createElement('div');
           flex.setAttribute('id', 'login-flex');
           // this is first flex box
           let div1 = document.createElement('div');
+          div1.setAttribute('id', 'login-flex-left')
           let form = document.createElement('form');
           let input = document.createElement('input');
           input.type = 'email';
@@ -54,31 +55,44 @@ let appendPopLogin  = ()=>{
           span2.innerText = 'and';
         
           p.append(span1, a1, span2, a2);
-          let fund = document.createElement('h3');
+          let fund = document.createElement('h5');
           let span3 = document.createElement('span');
           span3.innerText = 'Want to start fundraiser?';
           let a3 = document.createElement('a');
+          a3.href= './crowdfunding.html';
+          a3.innerText = 'Click Here'
           fund.append(span3, a3);
           div1.append(form, option, p, fund);
            //this second flex box 
           let div2 = document.createElement('div');
-          let line = document.createElement('hr');
+          div2.setAttribute('id', 'login-flex-middle')
+          let line = document.createElement('div');
           let or = document.createElement('span');
-          or.innerText = 'Or';
+          or.innerText = 'OR';
+          let line1 = document.createElement('div');
 
-          div2.append(line, or, line);
+          div2.append(line, or, line1);
 
 
           // this is third flex box
           let div3 = document.createElement('div')
-            
+          div3.setAttribute('id', 'login-flex-right');
+          let button1 = document.createElement('button')
+          button1.innerHTML = '<img src="https://ketto.gumlet.io/assets/images/login/google.png?w=240&dpr=1.5"> login with Google'
+          div3.append(button1);   
           flex.append(div1, div2, div3);
-          div.append(close, head, flex, );
+          div.append(close, head, flex);
 
           document.querySelector('body').append(div);
 
 }
 
+let toggleLogin  = ()=>{
+    if(document.getElementById('loginPopUp').style.display == 'none'){
+            document.getElementById('loginPopUp').style.display = 'flex';
+    }else{
+           document.getElementById('loginPopUp').style.display = 'none';
+    }
+}
 
-
-export { appendPopLogin };
+export { appendPopLogin, toggleLogin};

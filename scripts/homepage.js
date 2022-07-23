@@ -15,7 +15,7 @@ window.onload  = () =>{
 
          document.getElementById('footerOne').innerHTML = footer();
 
-      // appendPopLogin();
+       appendPopLogin();
 }
 
 
