@@ -1,22 +1,18 @@
-<<<<<<< HEAD
-// import navbar.js for navbar 
-  import {navbar} from '../components/navbar.js';
-// import sign_in.js file for append
-  import {appendPopLogin} from '../components/sign_in.js';
+// // import navbar.js for navbar 
+//   import {navbar} from '../components/navbar.js';
+// // import sign_in.js file for append
+//   import {appendPopLogin} from '../components/sign_in.js';
 
-window.onload  = () =>{
-          let link = document.createElement('link');
-          link.rel = 'stylesheet';
-          link.href = './styles/nav.css';
-          // append this link to head of document
-          document.querySelector('head').append(link);
-          document.getElementById('navbar').innerHTML = navbar();
+// window.onload  = () =>{
+//           let link = document.createElement('link');
+//           link.rel = 'stylesheet';
+//           link.href = './styles/nav.css';
+//           // append this link to head of document
+//           document.querySelector('head').append(link);
+//           document.getElementById('navbar').innerHTML = navbar();
 
-       appendPopLogin();
-}
-=======
-
->>>>>>> 32ed42c4a0f22932cc6ebdebb3dd62e33b57b1d1
+//        appendPopLogin();
+// }
 // crowdfuncding 
 
 
@@ -41,8 +37,3 @@ function User(type, name, email, password, mobile){
         this.mobile = mobile
 
 }
-<<<<<<< HEAD
-=======
- 
-
->>>>>>> 32ed42c4a0f22932cc6ebdebb3dd62e33b57b1d1
