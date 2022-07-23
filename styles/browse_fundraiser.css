@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#container-head{
+    
+    background: url('https://www.ketto.org/assets/images/Sip-banner-people/sip-banner-pc.png') no-repeat;
+    background-size: cover;   
+     display: flex;
+     justify-content: flex-start;
+
+
+}
+#container-head>div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    cursor: pointer;
+    padding: 30px;
+    margin-bottom: 20px;
+    max-width: 450px;
+}
+#container-head h1, #container-head p {
+       color: white;
+       padding: 10px 0px;
+}
+#container-head button{
+      padding: 5px 10px;
+      color: #539dc0;
+      font-weight: bold;
+}
+#container-middle{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+
+@media (max-width: 768px){
+
+}

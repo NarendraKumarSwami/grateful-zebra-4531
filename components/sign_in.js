@@ -62,8 +62,11 @@ let appendPopLogin  = ()=>{
           div1.append(form, option, p, fund);
            //this second flex box 
           let div2 = document.createElement('div');
-           
           let line = document.createElement('hr');
+          let or = document.createElement('span');
+          or.innerText = 'Or';
+
+          div2.append(line, or, line);
 
 
           // this is third flex box
