@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: black;
+    background-color: rgb(249, 243, 243);
 }
 #container{
        display: flex;
@@ -68,7 +68,8 @@ body {
        border-radius: 0px 0px 10px 10px 0px;
 }
 #already{
-   margin: auto;
+     display: block;
+     margin: auto;
     text-align: center;
     color: white;
     padding: 5px;
@@ -76,6 +77,10 @@ body {
 #already a {
        color: #01bfbd;
        text-decoration: none;
+}
+#container+div{
+       padding: 5px;
+       text-align: center;
 }
 
 
