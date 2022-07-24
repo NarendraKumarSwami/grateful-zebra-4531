@@ -38,7 +38,7 @@ let response = await data.json();
              let div = document.createElement('div');
              let img = document.createElement('img');
              img.src = el.image;
-             let heading = document.createElement('h1');
+             let heading = document.createElement('h3');
              heading.innerText = el.heading;
 
              let div1 = document.createElement('div');
