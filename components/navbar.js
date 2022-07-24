@@ -29,7 +29,7 @@ function navbar(){
     </div>
     
     <div id="left_nav2">
-         <button id="shift">Start a Fundraiser</button>
+         <button id="shift" ><a href="./crowdfunding.html">Start a Fundraiser</a></button>
      </div>
      <h3 id="signin" >Sign In</h3>
     </div>
