@@ -7,11 +7,11 @@ function navbar(){
        <div id="content">
         <a href="browse_fundraiser.html"><p id="ptag1st">Browse Fundraisers</p></a>
        
-        <select id="">
-           <option value=""> Fundraiser For</option>
-            <option value="">Treatment</option>
-            <option value="">NGO Charity</option>
-            <option value="">Other Causes</option>
+        <select id="selects">
+           <option id="options" value="" > Fundraiser For</option>
+            <option id="options" value="">Treatment</option>
+            <option id="options" value="">NGO Charity</option>
+            <option id="options" value="">Other Causes</option>
           
           </select>
         <a href="./How_it_works.html"><p id="ptag1st">How it works</p></a>

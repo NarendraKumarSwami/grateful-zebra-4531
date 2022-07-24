@@ -34,7 +34,7 @@ border: 1px solid;
     /* border: 1px solid; */
  }
 
- option, select{
+ #options, #selects{
     height: 22px;
     border: none;
     cursor: pointer;
@@ -352,7 +352,7 @@ justify-content: flex-end;
 #paymentlogo{
     width: 60%;
 }
-hr{
+#paymentlogos+hr{
     margin-top: 10px;
     width: 80%;
     margin-left: 90px;

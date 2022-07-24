@@ -5,9 +5,7 @@ import {navbar} from '../components/navbar.js';
 // import footer.js for footer
 import {footer} from  '../components/footer.js';
 
-// import data json from data file
-  let data = await fetch('./data.json');
-  let response = await data.json();
+
   
 
  window.onload  = () =>{
@@ -24,6 +22,10 @@ import {footer} from  '../components/footer.js';
       document.getElementById('signin').addEventListener('click', toggleLogin)
 }
 
+// import data json from data file
+let data = await fetch('./data.json');
+let response = await data.json();
+
 
 // add data  
   let appendData = (response)=>{
@@ -36,7 +38,7 @@ import {footer} from  '../components/footer.js';
              let div = document.createElement('div');
              let img = document.createElement('img');
              img.src = el.image;
-             let heading = document.createElement('h1');
+             let heading = document.createElement('h3');
              heading.innerText = el.heading;
 
              let div1 = document.createElement('div');
