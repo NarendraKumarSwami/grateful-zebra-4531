@@ -26,7 +26,12 @@ import {footer} from  '../components/footer.js';
 
 
 // add data  
-  let appendData = ()=>{
+  let appendData = (response)=>{
+    document.getElementById('middle-right-bottom').innerText = '';
+      if(response.length == 0){
+        document.getElementById('middle-right-bottom').innerText = 'There is no Data ';
+        return;
+      }
        response.forEach(el=>{
              let div = document.createElement('div');
              let img = document.createElement('img');
@@ -44,7 +49,7 @@ import {footer} from  '../components/footer.js';
              let raiseMoney = document.createElement('p');
              raiseMoney.innerText= el.raiseMoney;
              let days = document.createElement('p');
-             days.innerText = `${days} left `;
+             days.innerText = `${el.days} left `;
 
              let lastDonation = document.createElement('p');
              lastDonation.innerText = el.status;
@@ -57,3 +62,46 @@ import {footer} from  '../components/footer.js';
        })
   }
   appendData(response);
+
+
+  let categoriesFilter  = (value)=>{
+       if( value == 'all categories'){
+         return  appendData(response);
+       }
+      let new_res =    response.filter(el=>{
+                 return el.categories == value;
+         });
+       
+         appendData(new_res);
+  }
+  let locationFilter  = (value)=>{
+    if( value == 'all locations'){
+      return  appendData(response);
+    }
+    let new_res =    response.filter(el=>{
+               return el.location == value;
+       });
+
+       appendData(new_res);
+}
+let typeFilter  = (value)=>{
+  if( value == 'all types'){
+    return  appendData(response);
+  }
+  let new_res =    response.filter(el=>{
+             return el.type == value;
+     });
+
+     appendData(new_res);
+}
+
+  document.getElementById('categories-select').addEventListener('change', ()=>{
+          
+           categoriesFilter(document.getElementById('categories-select').value);
+  })
+  document.getElementById('location-select').addEventListener('change', ()=>{
+    locationFilter(document.getElementById('location-select').value);
+  })
+   document.getElementById('type-select').addEventListener('change', ()=>{
+  typeFilter(document.getElementById('type-select').value);
+   })
