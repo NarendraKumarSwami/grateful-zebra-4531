@@ -5,9 +5,7 @@ import {navbar} from '../components/navbar.js';
 // import footer.js for footer
 import {footer} from  '../components/footer.js';
 
-// import data json from data file
-  let data = await fetch('./data.json');
-  let response = await data.json();
+
   
 
  window.onload  = () =>{
@@ -23,6 +21,10 @@ import {footer} from  '../components/footer.js';
       appendPopLogin();
       document.getElementById('signin').addEventListener('click', toggleLogin)
 }
+
+// import data json from data file
+let data = await fetch('./data.json');
+let response = await data.json();
 
 
 // add data  

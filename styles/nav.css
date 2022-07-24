@@ -352,7 +352,7 @@ justify-content: flex-end;
 #paymentlogo{
     width: 60%;
 }
-hr{
+#paymentlogos+hr{
     margin-top: 10px;
     width: 80%;
     margin-left: 90px;
