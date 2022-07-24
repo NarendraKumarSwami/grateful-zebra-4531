@@ -99,6 +99,21 @@
        font-weight: bold;
 }
 
+#middle-right-bottom{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(25, 1fr);
+      gap: 20px;
+      margin-top: 10px;
+}
+#middle-right-bottom > div{
+      padding: 5px;
+     
+}
+#middle-right-bottom>div>img{
+     width: 100%;
+}
+
 
 
 
