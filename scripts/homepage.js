@@ -62,17 +62,17 @@ productContainers.forEach((item, i) => {
   
   function showSlides(n) {
     let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let dotss = document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+    let slides1 = document.getElementsByClassName("mySlides");
+    let dotss = document.getElementsByClassName("dot12");
+    if (n > slides1.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides1.length}
+    for (i = 0; i < slides1.length; i++) {
+      slides1[i].style.display = "none";
     }
     for (i = 0; i < dotss.length; i++) {
       dotss[i].className = dotss[i].className.replace(" active", "");
     }
-    slides[slideIndex-1].style.display = "block";
+    slides1[slideIndex-1].style.display = "block";
     dotss[slideIndex-1].className += " active";
   }
 // slide 2 end

@@ -80,14 +80,11 @@ text-align: center;
 /* product slide-I start */
   /* HEADER */
 
-  * {
-      /* background-color: white; */
-      /* margin: auto; */
-      /* margin-bottom: 0px; */
+  /* * {
+     
       padding: 1px;
-      /* font-family: "Mulish", sans-serif; */
       
-    }
+    } */
     .product {
       position: relative;
       overflow: hidden;
@@ -265,7 +262,7 @@ text-align: center;
       justify-content: center;
       align-items: center;
       background-color: white;
-      /* background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%); */
+   
       cursor: pointer;
       z-index: 8;
     }
@@ -603,7 +600,7 @@ text-align: center;
 
 
       /* slide 2 :start */
-* {box-sizing:border-box}
+/* * {box-sizing:border-box} */
 
 /* Slideshow container */
 .slideshow-container {
@@ -614,9 +611,9 @@ margin-bottom: 40px;
 }
 
 /* Hide the images by default */
-.mySlides {
+/* .mySlides {
 display: none;
-}
+} */
 
 /* Next & previous buttons */
 .prevv, .nextt {
@@ -667,7 +664,7 @@ top: 0;
 }
 
 /* The dots/bullets/indicators */
-.dot {
+.dot12 {
 cursor: pointer;
 height: 15px;
 width: 15px;
@@ -678,7 +675,7 @@ display: inline-block;
 transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active, .dot12:hover {
 background-color: #717171;
 }
 
